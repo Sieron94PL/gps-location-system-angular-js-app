@@ -1,0 +1,19 @@
+<html ng-app="GpsLocationSystem">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="login_styles.css">
+
+</head>
+
+<body>
+<div ng-controller="AuthenticationCtrl" class="login">
+    <h1>Login</h1>
+    <input type="text" placeholder="Username" ng-model="username"><br>
+    <input type="password" placeholder="Password" ng-model="password">
+    <button type="button" class="btn btn-primary btn-block btn-large" ng-click="signIn(username, password)">Sign in
+    </button>
+</div>
+</body>

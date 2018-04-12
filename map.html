@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <title>Map</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="map_styles.css">
+
+</head>
+
+<body>
+
+<div ng-app="GpsLocationSystem" ng-controller="MapCtrl">
+    <div align="right">
+        <p class="logout">Logged in as {{username}}
+            <button ng-click="logout()" class="btn_logout">Logout</button>
+        </p>
+    </div>
+
+    <p class="drawTrack">Select session ID
+        <select name="repeatSelect" id="repeatSelect" class="select" ng-model="idSession">
+            <option ng-repeat="option in sessionsList" value="{{option.idSession}}">{{option.idSession + " - " +
+                option.date}}
+            </option>
+        </select>
+        <button ng-click="drawMapClick(idSession)" class="btn_drawTrack">Draw track</button>
+    </p>
+    <div id="map_div"></div>
+
+</div>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0fwcw9k4Y6nqB8y6pboARJ3-bx4OKcyo&callback=initMap">
+</script>
+
+</body>
+</html>
