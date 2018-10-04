@@ -7,3 +7,5 @@ Purpose and scope of work: Main goal of this thesis is to design system joining 
 Basic functionalites:
 * loging to the system (Spring Security - Basic Authentication)
 * viewing registered tracks on Google Maps
+
+<img src="https://user-images.githubusercontent.com/25122911/46471746-38d44200-c7db-11e8-9033-e94f49f89db1.png" width="45%" height="45%"> <img src="https://user-images.githubusercontent.com/25122911/46471747-38d44200-c7db-11e8-98c5-765e0a3982a0.png" width="45%" height="45%">
